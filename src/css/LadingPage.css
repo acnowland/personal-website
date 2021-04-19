@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.background{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("../picture/cabin.jpg") no-repeat  center center fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.welcome-hero{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 55%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -25%; */
+}
+.welcome-hero h2{
+    margin: 0 auto;
+}
+.hello-hero{
+    font-size: 30px;
+}
