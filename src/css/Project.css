@@ -1,0 +1,10 @@
+.project-container{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    background: linear-gradient(white 65%, #3043b0f7);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+}

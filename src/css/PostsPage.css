@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+
+
+.post-page-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.top-filler{
+    height: 50px;
+    width: 100vw;
+    
+}
+
+.title-card-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    
+}
+.title-card-container::before{
+    content: '';
+    background:
+        url("../picture/cabin.jpg") no-repeat  center center fixed;
+    filter: grayscale();
+    /* webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    background-attachment: scroll;
+    position: absolute;
+    top: 8%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    opacity: .75;
+}
+.blog-title{
+    font-family: 'Poppins', sans-serif;
+    
+    margin: 6rem;
+    text-align: center;
+    position: relative;
+}
+.card-container{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    background: linear-gradient(white 65%, #45671fe3);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.blog-card{
+    text-decoration: none;
+    height: 300px;
+    width: 500px;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    color: white;
+}
+.blog-card a{
+    text-decoration: none;
+}
+
+.post-title{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(23, 5, 5, 0.132);
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.blog-card h3{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(4, 1, 1, 0.571);
+    border-radius: 5px;
+    position: relative;
+}
+
+.post-image{
+    position: absolute;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}

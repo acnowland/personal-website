@@ -1,6 +1,9 @@
 import React from 'react'
 import sanityClient from '../Client'
 import { useState, useEffect } from 'react'
+import '../css/PostsPage.css'
+import { Link } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons'
 
 
 const Posts = () => {
@@ -23,12 +26,34 @@ const Posts = () => {
             .then(data => setPost(data))
     }, [])
 
-
-
     return (
-        <div>
-            <h1>blog post page</h1>
-        </div>
+        <main className='post-page-container'>
+            <div className='top-filler'>
+
+            </div>
+            
+            <div className='title-card-container'>
+                <h1 className='blog-title'>Welcome to my Blog!</h1>
+                
+                <div className='card-container'>
+                    {postData && postData.map(post => {
+                        return <article className='blog-card'>
+                        <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+                            <span>
+                                <img className='post-image' src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
+                                <span className='post-title'>
+                                    <h3>
+                                        {post.title}
+                                    </h3>
+                                </span>
+                            </span>
+                        </Link>
+                    </article>
+                    })}
+                    
+                </div>
+            </div>
+        </main>
     )
 }
 

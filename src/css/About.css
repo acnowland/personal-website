@@ -1,0 +1,10 @@
+.about-container{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    background: linear-gradient(white 65%, #c18607e3);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+}
