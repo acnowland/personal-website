@@ -3,7 +3,7 @@ import sanityClient from '../Client'
 import { useState, useEffect } from 'react'
 import '../css/PostsPage.css'
 import { Link } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons'
+
 
 
 const Posts = () => {

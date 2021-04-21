@@ -13,13 +13,15 @@
 }
 
 .about-me{
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     height: 85%;
     width: 90%;
     border: 5px solid rgba(0, 0, 0, 0.598);
-    background-color: rgba(255, 255, 255, 0.365);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.694);
     position: relative;
 }
 .about-me h2{
@@ -29,28 +31,30 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 90%;
 }
 .left-about{
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
+    /* background-color: red; */
     
 }
 .top-left-about{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50%;
+    height: 40%;
 }
 .pic-container{
     height: 70%;
     width: 50%;
-    background-color: thistle;
+    
 }
 .pic-container img{
-    background-color: rgba(255, 255, 255, 0.365);
-    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.338);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
     display: block;
     width: 100%;
     height: 100%;
@@ -59,17 +63,57 @@
 }
 .bottom-left-about{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     height: 50%;
     /* background-color: blue; */
 }
-
-
+.bottom-left-skills{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    min-height: 15%;
+    /* background-color: wheat; */
+    
+}
+.bottom-left-skill-div{
+    overflow-y: scroll;
+    height: 85%;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottom-left-skill-div::-webkit-scrollbar{
+    display: none;
+}
+.top-skills{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    /* background-color: blue; */
+}
 
 .right-about{
     width: 50%;
     display: flex;
     justify-content: center;
+    overflow-y: scroll;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
     /* background-color: turquoise; */
+}
+.right-about::-webkit-scrollbar{
+    display: none;
 
 }
