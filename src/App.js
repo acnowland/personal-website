@@ -17,7 +17,7 @@ function App() {
     showNavBar(!navBar)
   }
 
-  console.log(navBar)
+  
 
   return (
     <>

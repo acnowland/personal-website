@@ -1,10 +1,75 @@
 .about-container{
     font-family: 'Poppins', sans-serif;
     overflow: scroll;
-    background: linear-gradient(white 65%, #c18607e3);
+    background: linear-gradient(white 65%, #c1880fe3);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 100%;
     width: 100vw;
+}
+.about-container::-webkit-scrollbar{
+    display: none;
+}
+
+.about-me{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 90%;
+    border: 5px solid rgba(0, 0, 0, 0.598);
+    background-color: rgba(255, 255, 255, 0.365);
+    position: relative;
+}
+.about-me h2{
+    text-align: center;
+}
+.lower-components{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.left-about{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.top-left-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.pic-container{
+    height: 70%;
+    width: 50%;
+    background-color: thistle;
+}
+.pic-container img{
+    background-color: rgba(255, 255, 255, 0.365);
+    border-radius: 100px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.bottom-left-about{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    /* background-color: blue; */
+}
+
+
+
+.right-about{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* background-color: turquoise; */
+
 }

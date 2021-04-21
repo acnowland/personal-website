@@ -24,7 +24,7 @@ const NavBar = () => {
                     </NavLink>
 
                     <NavLink to="/resume" className='link'>
-                        Resume
+                        Contact
                     </NavLink>
                 </nav>
             </div>

@@ -46,9 +46,12 @@
 .blog-title{
     font-family: 'Poppins', sans-serif;
     
-    margin: 6rem;
+    /* margin: 6rem; */
+    padding-bottom: 1rem;
+    margin-top: 8rem;
     text-align: center;
     position: relative;
+    border-bottom: 1px solid black;
 }
 .card-container{
     font-family: 'Poppins', sans-serif;

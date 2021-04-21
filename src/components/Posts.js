@@ -33,13 +33,13 @@ const Posts = () => {
             </div>
             
             <div className='title-card-container'>
-                <h1 className='blog-title'>Welcome to my Blog!</h1>
+                <h1 className='blog-title'>Blog Page!</h1>
                 
                 <div className='card-container'>
                     {postData && postData.map(post => {
-                        return <article className='blog-card'>
+                        return <article className='blog-card' key={post.slug.current}>
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                            <span>
+                            <span >
                                 <img className='post-image' src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
                                 <span className='post-title'>
                                     <h3>

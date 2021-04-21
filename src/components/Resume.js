@@ -9,8 +9,8 @@ const Resume = () => {
         </div>
         
         <div className='title-card-container'>
-            <h1 className='blog-title'>My Resume!</h1>
-            <div className='card-container resume-container'>
+            <h1 className='blog-title'>Lets Get in Touch!</h1>
+            <div className='contact-container'>
                 
             </div>
         </div>
