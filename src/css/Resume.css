@@ -1,6 +1,6 @@
 .contact-container{
     font-family: 'Poppins', sans-serif;
-    overflow: scroll;
+    /* overflow: scroll; */
     background: linear-gradient(white 65%, #932215bf);
     display: flex;
     justify-content: space-evenly;

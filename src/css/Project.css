@@ -1,6 +1,6 @@
 .project-container{
     font-family: 'Poppins', sans-serif;
-    overflow: scroll;
+    /* overflow: scroll; */
     background: linear-gradient(white 65%, #3043b0cb);
     display: flex;
     justify-content: space-evenly;
@@ -20,9 +20,11 @@
     height: 88%;
     width: 95%;
     border: 5px solid rgba(0, 0, 0, 0.372);
-    background-color: rgba(255, 255, 255, 0.317);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color:rgba(255, 255, 255, 0.694);
     position: relative;
-    
+
 }
 
 .my-projects{

@@ -1,6 +1,6 @@
 .about-container{
     font-family: 'Poppins', sans-serif;
-    overflow: scroll;
+    /* overflow: scroll; */
     background: linear-gradient(white 65%, #c1880fe3);
     display: flex;
     justify-content: space-evenly;

@@ -55,7 +55,7 @@
 }
 .card-container{
     font-family: 'Poppins', sans-serif;
-    overflow: scroll;
+    /* overflow: scroll; */
     background: linear-gradient(white 65%, #45671fe3);
     display: flex;
     justify-content: space-evenly;
@@ -67,10 +67,29 @@
     display: none;
 }
 
+.all-cards{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    width: 90%;
+    border: 5px solid rgba(0, 0, 0, 0.598);
+    background-color: rgba(255, 255, 255, 0.694);
+    position: relative;
+    margin-bottom: 2rem;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow-y: scroll;
+}
+.all-cards::-webkit-scrollbar{
+    display: none;
+}
+
 .blog-card{
     text-decoration: none;
-    height: 300px;
-    width: 500px;
+    min-height: 300px;
+    width: 400px;
     margin: 2rem;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

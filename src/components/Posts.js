@@ -33,23 +33,26 @@ const Posts = () => {
             </div>
             
             <div className='title-card-container'>
-                <h1 className='blog-title'>Blog Page!</h1>
+
                 
                 <div className='card-container'>
-                    {postData && postData.map(post => {
-                        return <article className='blog-card' key={post.slug.current}>
-                        <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                            <span >
-                                <img className='post-image' src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
-                                <span className='post-title'>
-                                    <h3>
-                                        {post.title}
-                                    </h3>
+                    <div className='all-cards'>
+                        <h1>Blog Posts!</h1>
+                        {postData && postData.map(post => {
+                            return <article className='blog-card' key={post.slug.current}>
+                            <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+                                <span >
+                                    <img className='post-image' src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
+                                    <span className='post-title'>
+                                        <h3>
+                                            {post.title}
+                                        </h3>
+                                    </span>
                                 </span>
-                            </span>
-                        </Link>
-                    </article>
-                    })}
+                            </Link>
+                        </article>
+                        })}
+                    </div>
                     
                 </div>
             </div>
