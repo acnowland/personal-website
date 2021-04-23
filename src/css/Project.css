@@ -17,13 +17,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 88%;
+    height: 85%;
     width: 95%;
     border: 5px solid rgba(0, 0, 0, 0.372);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     background-color:rgba(255, 255, 255, 0.694);
     position: relative;
+    
 
 }
 
