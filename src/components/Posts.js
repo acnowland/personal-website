@@ -37,7 +37,7 @@ const Posts = () => {
                 
                 <div className='card-container'>
                     <div className='all-cards'>
-                        <h1>Blog Posts!</h1>
+                        <h2>Blog Posts!</h2>
                         {postData && postData.map(post => {
                             return <article className='blog-card' key={post.slug.current}>
                             <Link to={"/post/" + post.slug.current} key={post.slug.current}>

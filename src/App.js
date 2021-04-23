@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-// import { useState } from 'react'
+import { useEffect } from 'react'
 import Home from './components/Home'
 import About from './components/About'
 import SinglePost from './components/SinglePost'
@@ -16,6 +16,10 @@ function App() {
   // const toggleNav = () => {
   //   showNavBar(!navBar)
   // }
+
+  useEffect(() => {
+    document.title = "Adam Nowland"
+ }, []);
 
   
 
